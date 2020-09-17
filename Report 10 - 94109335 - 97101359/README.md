@@ -47,3 +47,39 @@ Memory has direct access to the value stored in MAR and memory instructions fetc
 
 BCD module gets its inputs from outputs of CPU in the format of an 8bits number and determines ones, tens, hundreds of this number in three 4 bits output, and each of these 4 bits will be given as an input to seven segment module.
 
+## Simulation
+
+First, we start with the error signal. As you see below after reset is deasserted due to negative, the input error signal is asserted.
+![error signal nagative input](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/Report%2010%20-%2094109335%20-%2097101359/images/cpu1.JPG)
+
+Also in the picture below the result of the computation is negative and we can see the error signal is asserted one clock cycle after the value is written to output.
+![error signal nagative result](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/Report%2010%20-%2094109335%20-%2097101359/images/cpu2.JPG)
+
+In the 6 following pictures I've set the input to 2 and shows the steps taken by the cpu. Also you can see in the last picture that the result is (23+2)\*2-12= 38= 0X26
+
+![test an input](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/Report%2010%20-%2094109335%20-%2097101359/images/cpu3.JPG)
+
+![test an input](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/Report%2010%20-%2094109335%20-%2097101359/images/cpu4.JPG)
+
+![test an input](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/Report%2010%20-%2094109335%20-%2097101359/images/cpu5.JPG)
+
+![test an input](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/Report%2010%20-%2094109335%20-%2097101359/images/cpu6.JPG)
+
+![test an input](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/Report%2010%20-%2094109335%20-%2097101359/images/cpu7.JPG)
+
+![test an input](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/Report%2010%20-%2094109335%20-%2097101359/images/cpu8.JPG)
+
+In the remaining pictures, I've tested zero and sign flags. the input is set to -23. As you see, after completion of ADD instruction zero flags set to 1(and remains). Besides, in the last picture when 0 is subtracted from 12 the zero flag is deasserted and the sign flag is asserted. Also, these two signals remain unchanged during other instructions.
+
+![check flags](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/Report%2010%20-%2094109335%20-%2097101359/images/cpu9.JPG)
+
+![check flags](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/Report%2010%20-%2094109335%20-%2097101359/images/cpu10.JPG)
+
+![check flags](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/Report%2010%20-%2094109335%20-%2097101359/images/cpu11.JPG)
+
+![check flags](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/Report%2010%20-%2094109335%20-%2097101359/images/cpu12.JPG)
+
+![check flags](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/Report%2010%20-%2094109335%20-%2097101359/images/cpu13.JPG)
+
+![check flags](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/Report%2010%20-%2094109335%20-%2097101359/images/cpu14.JPG)
+
