@@ -5,29 +5,29 @@
 Our purpose is to design a stack-based processor with 8 8bits registers. This processor has 8 instructions in its ISA. Besides, it has 256 words (8bits) memory which its last 8 words (i.e from F8 to FF) are reserved for Memory-Mapped I/O. 
 Supporting instructions are listed below:
 
-1. 0000  PUSHC C
-This instruction pushes a constant 8bits value into the stack.
+1. `0000  PUSHC C`
+  - This instruction pushes a constant 8bits value into the stack.
 
-2. 0001  PUSH  M
-This instruction pushes value stored in memory[M] into the stack.
+2. `0001  PUSH  M`
+ - This instruction pushes value stored in memory[M] into the stack.
 
-3. 0010 POP M
-This instruction pops a value from the stack and stores it in memory[M].
+3. `0010 POP M`
+ - This instruction pops a value from the stack and stores it in memory[M].
 
-4. 0011 JUMP 
-This instruction pops a value from the stack and stores it in the PC.
+4. `0011 JUMP`
+ - This instruction pops a value from the stack and stores it in the PC.
 
-5. 0100 JZ
-This instruction will pop a value from the stack and if the zero flag is 1 then store the value in the PC.
+5. `0100 JZ`
+ - This instruction will pop a value from the stack and if the zero flag is 1 then store the value in the PC.
 
-6. 0101 JS
-This instruction will pop a value from the stack and if the sign flag is 1 then store the value in the PC.
+6. `0101 JS`
+ - This instruction will pop a value from the stack and if the sign flag is 1 then store the value in the PC.
 
-7. 0110 ADD
-This instruction adds two upper values of the stack together and pops them from the stack and pushes the result in the stack.
+7. `0110 ADD`
+ - This instruction adds two upper values of the stack together and pops them from the stack and pushes the result in the stack.
 
-8. 0111 SUB
-This instruction subtracts two upper values of the stack together and pops them from the stack and pushes the result in the stack.
+8. `0111 SUB`
+- This instruction subtracts two upper values of the stack together and pops them from the stack and pushes the result in the stack.
 
 As said above, in this processor we have two flag S and Z which are changed only when the instruction is ADD or SUB, and in other instructions, their values remain unchanged.
 Besides, all of the computations are signed and in the format of 2's complement. 
