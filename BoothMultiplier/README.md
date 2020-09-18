@@ -16,3 +16,5 @@ As you see in the two pictures below when `last_round` is 1 the result of the mu
 ![Booth multiplier](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/BoothMultiplier/images/booth1.JPG)
 
 ![Booth multiplier](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/BoothMultiplier/images/booth2.JPG)
+
+***Note: Verilog codes has been synthesised and tested on Intel FPGAs Cyclone II EP2C35F672C6***
