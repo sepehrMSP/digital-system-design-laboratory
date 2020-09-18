@@ -83,4 +83,5 @@ In the remaining pictures, I've tested zero and sign flags. the input is set to 
 
 ![check flags](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/StackBasedCPU/images/cpu14.JPG)
 
-***NOTE1: The report pdf is provided in Persian***
+***Note1: The report pdf is provided in Persian***
+***Note2: Verilog codes has been synthesised and tested on Intel FPGAs Cyclone II EP2C35F672C6***
