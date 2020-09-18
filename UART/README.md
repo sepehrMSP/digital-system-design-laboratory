@@ -35,3 +35,5 @@ As you see in the above image 2 clocks after changing `current_data` to the data
 ![transfer 0101010](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart7.JPG)
 
 ![transfer 0101010](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart8.JPG)
+
+***Note: Verilog codes has been synthesised and tested on Intel FPGAs Cyclone II EP2C35F672C6 ***
