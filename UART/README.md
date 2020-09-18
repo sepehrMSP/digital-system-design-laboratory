@@ -16,22 +16,22 @@ Receiver stores receiving data in a register called `current_data` and whenever 
 
 ## Simulation
 
-In the following image, you can see signals. The bottommost signal is `current_data` of receiver. The next signal from the bottom is the wire between receiver and sender(transmitter). Between to yellow pointers sender(transmitter) is at `IDLE` state. You can see `TX` is zero for 2 clocks which means the transfer has started. Then send corresponding data bits by 2 clocks delay(due to `CLOCKS_PER_BIT`) which you can see changes of `current_data` after each 2 clock cycles. you can use yellow pointer to ease of following images.
+In the following image, you can see signals. The bottommost signal is `current_data` of receiver. The next signal from the bottom is the wire between receiver and sender(transmitter). Between two yellow pointers sender(transmitter) is at `IDLE` state. You can see `TX` is zero for 2 clocks which means the transfer has started. Then send corresponding data bits by 2 clocks delay(due to `CLOCKS_PER_BIT`) which you can see changes of `current_data` after each 2 clock cycles. you can use yellow pointer to ease of following images.
 
-https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart1.JPG
+![transfer 1101101](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart1.JPG)
 
-https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart2.JPG
+![transfer 1101101](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart2.JPG)
 
-https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart3.JPG
+![transfer 1101101](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart3.JPG)
 
-https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart4.JPG
+![transfer 1101101](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart4.JPG)
 
 As you see in the above image 2 clocks after changing `current_data` to the data originally sent, output of UART changes, and assert `out_ready` for one clock cycle. In the next images, you can see the transfer of the next data which is `0101010`.
 
-https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart5.JPG
+![transfer 0101010](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart5.JPG)
 
-https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart6.JPG
+![transfer 0101010](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart6.JPG)
 
-https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart7.JPG
+![transfer 0101010](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart7.JPG)
 
-https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart8.JPG
+![transfer 0101010](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/UART/images/uart8.JPG)
