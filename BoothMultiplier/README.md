@@ -13,6 +13,6 @@ Our top module is `booth_multiplier` which contains and connects the Data path a
 As you see in the two pictures below when `last_round` is 1 the result of the multiplication is moved to `res`. Besides, you can see the result of every step of the Booth algorithm in `temp_result`. 
 ***NOTE that in the simulation we've changed the size to 5. ***
 
-https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/BoothMultiplier/images/booth1.JPG
+![Booth multiplier](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/BoothMultiplier/images/booth1.JPG)
 
-https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/BoothMultiplier/images/booth2.JPG
+![Booth multiplier](https://github.com/sepehrMSP/digital-system-design-laboratory/tree/master/BoothMultiplier/images/booth2.JPG)
